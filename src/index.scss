@@ -1,0 +1,319 @@
+.hero-img {
+  height: 200px; 
+  object-fit: cover;
+}
+
+.loader-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.progress-wrapper {
+  position: absolute;
+  width: 60%; 
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.form-control:focus,
+.btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.profile-img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.profile-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.profile-card {
+  color: white;
+  border-radius: 8px;
+  padding: 1rem 1rem 2rem 1rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  width: 250px;
+  background-color: #4b4b4b;
+}
+.book-card {
+  background-color: #282837;
+}
+
+.book-card-image {
+  background-color: #1f1f2e;
+}
+
+.comic-img {
+  max-height: 150px;
+  object-fit: contain;
+}
+.continue-reading-card {
+  .image-wrapper {
+    width: 180px;
+    height: 220px;
+
+    .card-image {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    .progress-wrapper {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+.create-book-card {
+  .card-container {
+    background-color: #282837;
+    border-radius: 12px;
+
+    .logo {
+      max-height: 40px;
+      object-fit: contain;
+    }
+
+    .custom-input {
+      background-color: #1c1c28; // slightly darker than card if needed
+      border: 1px solid #6c757d; // matches border-secondary
+      border-radius: 0.25rem; // same as Bootstrap's rounded
+      color: #fff;
+
+      &::placeholder {
+        color: #ccc;
+      }
+    }
+  }
+}
+.hero-card {
+  .hero-image {
+    max-height: 350px;
+    object-fit: cover;
+  }
+
+  .hero-content {
+    p {
+      margin-bottom: 0.25rem;
+    }
+
+    h5 {
+      font-weight: 700;
+    }
+
+    .btn {
+      margin-top: 0.5rem;
+    }
+  }
+}
+.sidebar-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 1rem; /* Rounded like Figma */
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  justify-content: flex-start;
+}
+.collections-section {
+  .search-input {
+    background-color: #1c1c28;
+    border: 1px solid #6c757d;
+    
+  }
+#collection-btn {
+  background-color: #0d6efd;  
+  color: #fff;              
+  font-weight: 500;          
+  padding: 10px 20px;        
+  border-radius: 8px;        
+  display: flex;             
+  align-items: center;
+  gap: 10px;                 
+  border: none;              
+  cursor: pointer;           
+  transition: all 0.3s ease; 
+}
+
+.bookpage #collection-btn:hover {
+  background-color: #0b5ed7; 
+}
+
+  .profile-img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+
+  .profile-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .profile-card {
+    width: 250px;
+    background-color: #4b4b4b;
+    margin-top: 3rem;
+    margin-right: 1rem;
+  }
+
+  .completed-read {
+    background-color: #282837;
+    border-radius: 20px;
+  }
+
+  .continue-reading-wrapper {
+    border-radius: 20px;
+  }
+}
+.collections-section {
+  .search-input {
+    background-color: #1c1c28;
+    border: 1px solid #6c757d;
+  }
+
+  .profile-img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+
+  .profile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .profile-card {
+    width: 250px;
+    background-color: #4b4b4b;
+    margin-top: 3rem;
+    margin-right: 1rem;
+  }
+
+  .completed-read-section {
+    background-color: #282837;
+    border-radius: 20px;
+    padding: 1rem;
+
+    .continue-reading-wrapper {
+      border-radius: 20px;
+    }
+  }
+}
+
+
+.dashboard-container{
+  background-color: #1a1a1a;
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+ #dash-btn {
+  background-color: #0d6efd;  /* Bootstrap primary blue */
+  color: #fff;               /* White text */
+  font-weight: 500;          /* Medium-bold */
+  padding: 10px 20px;        /* Space inside */
+  border-radius: 8px;        /* Rounded corners */
+  display: flex;             /* Align icon + text */
+  align-items: center;
+  gap: 10px;                 /* Space between icon and text */
+  border: none;              /* Remove border */
+  cursor: pointer;           /* Hand cursor */
+  transition: all 0.3s ease; /* Smooth hover */
+}
+
+ #dash-btn:hover {
+  background-color: #0b5ed7; /* Slightly darker blue on hover */
+}
+
+}
+
+.main-content {
+  background-color: #1a1a1a;
+}
+
+.search-input {
+  background-color: #1a1a1a;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.profile-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.profile-card {
+  width: 250px;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  padding-bottom: 1.25rem;
+  margin-top: 1.25rem;
+  margin-right: 0.75rem;
+  color: #fff;
+}
+
+.status-active {
+  color: #28a745;
+  font-weight: bold;
+}
+ 
+
+.bookpage #collection-btn {
+  background-color: #0d6efd;  
+  color: #fff;              
+  font-weight: 500;          
+  padding: 10px 20px;        
+  border-radius: 8px;        
+  display: flex;             
+  align-items: center;
+  gap: 10px;                 
+  border: none;              
+  cursor: pointer;           
+  transition: all 0.3s ease; 
+}
+
+.bookpage #collection-btn:hover {
+  background-color: #0b5ed7; 
+}
