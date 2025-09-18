@@ -7,6 +7,7 @@ import ComicsSection from "./UI/ComicsSection";
 
 const Dashboard = () => {
   const [showProfile, setShowProfile] = useState(false);
+
   const comics = [
     { img: "flash.png", title: "The Flash, Vol.1", author: "Joshua Williamson" },
     { img: "titans.png", title: "Titans Vol.2", author: "Andrew Robinson" },
@@ -17,9 +18,10 @@ const Dashboard = () => {
   return (
     <section className="dashboard-bg">
       <div className="dashboard-container">
-           <div className="row mx-0 h-100 flex-column flex-md-row">
+        <div className="row mx-0 h-100 flex-column flex-md-row">
           <SideNavbar />
-          <div className="col-12 col-md-9 bg-dark p-4">
+          <div className="col-12 col-md-9 bg-dark p-4 position-relative">
+            {/* Top Bar */}
             <div className="row align-items-center mb-4">
               <div className="col-12 col-md-10">
                 <input
@@ -33,18 +35,35 @@ const Dashboard = () => {
                 <img
                   src="Ellipse1.png"
                   alt="profile"
-                  className="profile-img"
+                  className="profile-img rounded-circle"
                   onClick={() => setShowProfile(!showProfile)}
+                  style={{ cursor: "pointer" }}
                 />
               </div>
             </div>
 
             {showProfile && (
-              <div className="profile-overlay" onClick={() => setShowProfile(false)}>
-                <div className="profile-card" onClick={(e) => e.stopPropagation()}>
-                  <h6>Kalpana Patidar</h6>
-                  <p>
-                    Status: <span className="status-active">Active</span>
+              <div
+                className="profile-overlay d-flex justify-content-end align-items-start"
+                onClick={() => setShowProfile(false)}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  right: 0,
+                  width: "100%",
+                  height: "100%",
+                  backgroundColor: "rgba(0,0,0,0.5)",
+                  zIndex: 10,
+                }}
+              >
+                <div
+                  className="profile-card text-white rounded p-3 pb-5 bg-secondary"
+                  onClick={(e) => e.stopPropagation()}
+                  style={{ width: "200px", marginTop: "70px", marginRight: "20px" }}
+                >
+                  <h6 className="mb-2">Kalpana Patidar</h6>
+                  <p className="mb-1">
+                    Status: <span className="text-success fw-bold">Active</span>
                   </p>
                 </div>
               </div>
@@ -53,7 +72,7 @@ const Dashboard = () => {
             <div className="row mx-0 mb-4 align-items-center">
               <div className="col-12 col-md-8 mb-3 mb-md-0">
                 <HeroCard
-                  heroImage="Mask group (2).png"
+                  heroImage="image5.png"
                   name="Frank Miller"
                   title="Batman:The Dark Knight"
                   buttonText="Read Now"
